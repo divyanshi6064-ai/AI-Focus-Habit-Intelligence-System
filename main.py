@@ -52,7 +52,7 @@ loading_frame = create_frame("loading")
 
 
 # -------------------------------
-# START SCREEN (FIXED)
+# START SCREEN 
 # -------------------------------
 header = tk.Label(start_frame,
     text="AI Focus & Habit Intelligence System",
@@ -66,7 +66,7 @@ header.pack(fill="x")
 card = tk.Frame(start_frame, bg="white", bd=2, relief="solid")
 card.pack(pady=120, ipadx=40, ipady=30)
 
-# ADD CONTENT INSIDE CARD
+
 tk.Label(card,
          text="Welcome!",
          font=("Segoe UI", 14, "bold"),
@@ -176,7 +176,7 @@ def check():
         play_level()
     else:
         global q_index
-        q_index = 0   # 🔥 RESET QUESTIONS
+        q_index = 0   
 
         show("question")
         load_question()
@@ -239,7 +239,7 @@ def analyze():
     phone = answers.get("phone", 0)
     exercise = answers.get("exercise", 0)
 
-        # FIRST calculate discipline
+        
     discipline = 0
 
     if study >= 6:
